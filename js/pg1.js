@@ -6,7 +6,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(500,400);
   textAlign(CENTER);
   background(200);
 
