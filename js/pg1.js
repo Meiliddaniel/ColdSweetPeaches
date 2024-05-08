@@ -6,12 +6,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500,400);
+  createCanvas(windowWidth,windowHeight);
   textAlign(CENTER);
   background(200);
 
   textFont(title);
-  textSize(40);
+  textSize(width * (40/500));
   text('"Peaches"', width / 1.8, height / 2);
   textFont(body);
   textSize(25);
