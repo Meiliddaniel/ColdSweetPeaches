@@ -1,11 +1,11 @@
 var canNumber = 0
 
 function preload(){
-  body = loadFont('../font/NotoSan.ttf');
-  note = loadFont('../font/Zeyada.ttf');
-  table = loadImage('../img/Table.png');
-  peach = loadImage('../img/Peach2.png');
-  can = loadImage ('../img/Can.png');
+  body = loadFont('font/NotoSan.ttf');
+  note = loadFont('font/Zeyada.ttf');
+  table = loadImage('img/Table.png');
+  peach = loadImage('img/Peach2.png');
+  can = loadImage ('img/Can.png');
 }
 
 function setup() {

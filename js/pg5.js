@@ -2,12 +2,12 @@ var rx;
 var ry;
 
 function preload(){
-  title=loadFont('../font/GreatVibes.ttf');
-  body=loadFont('../font/NotoSan.ttf');
-  note=loadFont('../font/Zeyada.ttf');
-  pool=loadImage('../img/Pool 2.png');
-  water=loadImage('../img/Water.png');
-  floaty=loadImage('../img/floaty.png');
+  title=loadFont('font/GreatVibes.ttf');
+  body=loadFont('font/NotoSan.ttf');
+  note=loadFont('font/Zeyada.ttf');
+  pool=loadImage('img/Pool 2.png');
+  water=loadImage('img/Water.png');
+  floaty=loadImage('img/floaty.png');
 
 }
 

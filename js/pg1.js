@@ -1,8 +1,8 @@
 var firstEpress = true;
 
 function preload() {
-  title = loadFont('../font/GreatVibes.ttf');
-  body = loadFont('../font/NotoSan.ttf');
+  title = loadFont('font/GreatVibes.ttf');
+  body = loadFont('font/NotoSan.ttf');
 }
 
 function setup() {

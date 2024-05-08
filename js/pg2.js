@@ -1,12 +1,12 @@
 var imageState = 0;
 
 function preload(){
-  body = loadFont('../font/NotoSan.ttf');
-  note = loadFont('../font/Zeyada.ttf');
-  Fork = loadImage('../img/Fork.png');
-  OpenCan = loadImage('../img/OpenCan.png');
-  ClosedCan = loadImage('../img/ClosedCan.png');
-  FrontCan = loadImage('../img/FrontCan.png');
+  body = loadFont('font/NotoSan.ttf');
+  note = loadFont('font/Zeyada.ttf');
+  Fork = loadImage('img/Fork.png');
+  OpenCan = loadImage('img/OpenCan.png');
+  ClosedCan = loadImage('img/ClosedCan.png');
+  FrontCan = loadImage('img/FrontCan.png');
 
   
 }

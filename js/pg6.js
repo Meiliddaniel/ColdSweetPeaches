@@ -1,11 +1,11 @@
 var imageState = 0;
 
 function preload(){
-  title=loadFont('../font/GreatVibes.ttf');
-  body=loadFont('../font/NotoSan.ttf');
-  note=loadFont('../font/Zeyada.ttf');
-  radio1=loadImage('../img/Radio1.png');
-  radio2=loadImage('../img/Radio2.png');
+  title=loadFont('font/GreatVibes.ttf');
+  body=loadFont('font/NotoSan.ttf');
+  note=loadFont('font/Zeyada.ttf');
+  radio1=loadImage('img/Radio1.png');
+  radio2=loadImage('img/Radio2.png');
 }
 
 function setup() {

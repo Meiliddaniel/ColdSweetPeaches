@@ -2,11 +2,11 @@ var imageState = 0;
 var textState= 0;
 
 function preload(){
-  title=loadFont('../font/GreatVibes.ttf');
-  body=loadFont('../font/NotoSan.ttf');
-  note=loadFont('../font/Zeyada.ttf');
-  fanOff=loadImage('../img/FanOff.png');
-  fanOn=loadImage('../img/FanOn.gif');
+  title=loadFont('font/GreatVibes.ttf');
+  body=loadFont('font/NotoSan.ttf');
+  note=loadFont('font/Zeyada.ttf');
+  fanOff=loadImage('img/FanOff.png');
+  fanOn=loadImage('img/FanOn.gif');
 }
 
 function setup() {
