@@ -1,4 +1,5 @@
 var imageState = 0;
+var song;
 
 function preload(){
   title=loadFont('font/GreatVibes.ttf');
@@ -6,6 +7,10 @@ function preload(){
   note=loadFont('font/Zeyada.ttf');
   radio1=loadImage('img/Radio1.png');
   radio2=loadImage('img/Radio2.png');
+  song=loadSound('img/Peaches.mp3', loaded);
+}
+function loaded() {
+  console.log("loaded");
 }
 
 function setup() {
@@ -40,10 +45,19 @@ function keyPressed() {
   
     if (imageState == 0){
       imageState = 1;
-    } else {
+  } else {
       imageState = 0;
     }
 
+  if (imageState == 1) {
+    song.play();
+    song.setVolume(0.3);
+  } else {
+    song.pause();
+
   }
+
+}   
+    
   }
 }

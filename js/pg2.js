@@ -16,12 +16,13 @@ function setup() {
   imageMode(CENTER);
   textAlign(CENTER);
   background(220);
+  rectMode(CENTER);
 }
 
 function draw() {
   background(300);
   textFont(note);
-  text("(Click)", width/2, height/1.1);
+  text("(Click)", width/2, (height * (360/400)));
   
   if(imageState ==1){
     image(OpenCan, width/2,height/2,150,300);
@@ -29,10 +30,10 @@ function draw() {
     let mappedText = map(mouseY,0,height,0,height*(295/500),true);
     // print(mouseY);
     fill(60, 133, 80);
-    text("Cold sweet peaches from a can, \n on an August summer day", width/2.3, mappedText, 70);
+    text("Cold sweet peaches from a can, \n on an August summer day", width/2, mappedText, 70);
     image(FrontCan,width/2,height/2+48,150,200);
   } else {
-   image(ClosedCan,width/2,height/2+45,150,215);
+   image(ClosedCan,width/2,height*(243/400),150,215);
   }
   
     image(Fork,mouseX,mouseY,70,90);
