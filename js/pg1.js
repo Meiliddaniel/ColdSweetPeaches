@@ -1,8 +1,16 @@
 var firstEpress = true;
+var type;
+var paragraphIsMade = false;
+
 
 function preload() {
   title = loadFont('font/GreatVibes.ttf');
   body = loadFont('font/NotoSan.ttf');
+  type = loadSound('img/type.mp3', loaded);
+}
+
+function loaded() {
+  console.log("loaded");
 }
 
 function setup() {
@@ -16,11 +24,19 @@ function setup() {
   textFont(body);
   textSize(width * (25/500));
   text("Type", width * (182/500), height / 2);
+
+
 }
 
 function draw() {}
 
 function keyPressed() {
+
+  
+ 
+  type.play();
+  type.setVolume(0.1);
+
   print(keyCode);
   if (keyCode == 80) {
     background(255, 182, 71);
@@ -30,6 +46,8 @@ function keyPressed() {
     textFont(body);
     textSize(width * (25/500));
     text("Type", width * (182/500), height / 2);
+
+
   } else if (keyCode == 69 && firstEpress) {
     background(255, 182, 71);
     fill("white");
@@ -55,8 +73,15 @@ function keyPressed() {
     textSize(width*(15/500));
     text("Juan", (width* (230/500)), (height * (232/400)));
   } else if (keyCode == 83) {
-    textFont(body)
+    if(!paragraphIsMade);
+    createA('pg2.html','Next Line');
+    //if (not) paragraphIsMade
+  paragraphIsMade = true;
+    textFont(body);
     textSize(width*(15/500));
     text("Olivarez", (width * (277/500)), (height * (232/400)));
+
   }
 }
+
+

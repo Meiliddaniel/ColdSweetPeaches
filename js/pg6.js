@@ -1,5 +1,6 @@
 var imageState = 0;
 var song;
+var paragraphIsMade = false;
 
 function preload(){
   title=loadFont('font/GreatVibes.ttf');
@@ -45,6 +46,10 @@ function keyPressed() {
   
     if (imageState == 0){
       imageState = 1;
+      if(!paragraphIsMade);
+      createA('pg7.html','Next Line');
+      //if (not) paragraphIsMade
+    paragraphIsMade = true;
   } else {
       imageState = 0;
     }

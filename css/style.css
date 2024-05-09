@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 canvas {
   display: block;
@@ -9,17 +9,18 @@ canvas {
   margin-top: 5%;
 }
 
-#next-page-link {
-font-family: GreatVibes;
-position:absolute;
-margin-left: 70%;
-margin-top: 5%;
-color:rgb(255, 182, 99);
-text-decoration: none;
+
+a:hover {
+  color:rgb(255, 182, 99);
 }
 
-#next-page-link:hover {
-  color:rgb(255, 255, 255);
-  scale:110%;
+a {
+  font-family: GreatVibes;
+position:absolute;
+font-size: 150%;
+margin-left: 70%;
+margin-top: 2%;
+color:rgb(255, 233, 207);
+text-decoration: none;
 }
 

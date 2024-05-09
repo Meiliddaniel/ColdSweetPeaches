@@ -1,27 +1,36 @@
 var imageState = 0;
+var canNoise;
+var paragraphIsMade = false;
+
 
 function preload(){
+  title=loadFont('font/GreatVibes.ttf');
   body = loadFont('font/NotoSan.ttf');
   note = loadFont('font/Zeyada.ttf');
   Fork = loadImage('img/Fork.png');
   OpenCan = loadImage('img/OpenCan.png');
   ClosedCan = loadImage('img/ClosedCan.png');
   FrontCan = loadImage('img/FrontCan.png');
+  canNoise = loadSound('img/cannedFood.mp3');
 
   
+}
+function loaded() {
+  console.log("loaded");
 }
 
 function setup() {
   createCanvas(windowWidth/1.5,windowHeight/1.5);
   imageMode(CENTER);
   textAlign(CENTER);
-  background(220);
   rectMode(CENTER);
 }
 
 function draw() {
   background(300);
   textFont(note);
+  fill(60, 133, 80);
+  textSize(width * (10/500));
   text("(Click)", width/2, (height * (360/400)));
   
   if(imageState ==1){
@@ -42,7 +51,15 @@ function draw() {
   
 }
 
+function mouseClicked(){
+  if(!paragraphIsMade);
+    createA('pg3.html','Next Line');
+    //if (not) paragraphIsMade
+  paragraphIsMade = true;
+}
+
 function mousePressed(){
+
   if (mouseX > width/2 - 50 && mouseX < width/2 + 100 &&
     mouseY > height/2 -50 && mouseY < height/2 + 100); 
   {
@@ -52,8 +69,17 @@ function mousePressed(){
     } else {
       imageState = 0;
     }
+    if (imageState == 1) {
+      canNoise.play();
+      canNoise.setVolume(0.3);
+
   }
+
+
   print(imageState);
 }
+}
+
+
 
 

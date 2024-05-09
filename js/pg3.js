@@ -2,6 +2,8 @@ let textMovement = 250;
 let movementSpeed = -8;
 let movementStarted = false;
 var fanNoise;
+var paragraphIsMade = false;
+
 
 var imageState = 0;
 
@@ -52,6 +54,10 @@ function mousePressed(){
     if (imageState == 0){
       imageState = 1;
           moveStarted = true;
+          if(!paragraphIsMade);
+          createA('pg4.html','Next Line');
+          //if (not) paragraphIsMade
+        paragraphIsMade = true;
     startMovement();
     } else {
       imageState = 0;
@@ -59,7 +65,7 @@ function mousePressed(){
 
   if (imageState == 1) {
     fanNoise.play();
-    fanNoise.setVolume(0.3);
+    fanNoise.setVolume(0.4);
   } else {
     fanNoise.stop();
   
@@ -72,7 +78,7 @@ function startMovement() {
 
   let interval = setInterval(function() {
     textMovement += movementSpeed;
-    if (textMovement < -100) { 
+    if (textMovement < -500) { 
       textMovement = 250;
       clearInterval(interval);
   }

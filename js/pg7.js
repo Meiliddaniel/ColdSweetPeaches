@@ -6,6 +6,7 @@ let fadeStarted = false;
 let littleSize = 25;
 let shrinkSpeed = -1;
 let shrinkStarted = false;
+var paragraphIsMade = false;
 
 
 function preload() {
@@ -50,6 +51,10 @@ function mousePressed() {
   if (!shrinkStarted && mouseX > width *(87/500) && mouseX < width *(208/500) && mouseY > height*(218/400) && mouseY < height*(236/400)) {
     shrinkStarted = true; 
     startShrink(); 
+    if(!paragraphIsMade);
+    createA('pg8.html','Next Line');
+    //if (not) paragraphIsMade
+  paragraphIsMade = true;
   }
 }
 

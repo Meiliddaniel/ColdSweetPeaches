@@ -1,4 +1,5 @@
 let peach2;
+var paragraphIsMade = false;
 
 function preload() {
   title = loadFont('font/GreatVibes.ttf');
@@ -54,4 +55,8 @@ function mousePressed() {
 
 function mouseReleased() {
   dragging = false;
+  if(!paragraphIsMade);
+  createA('index.html','The End');
+  //if (not) paragraphIsMade
+paragraphIsMade = true;
 }

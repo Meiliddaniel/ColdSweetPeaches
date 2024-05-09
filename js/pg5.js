@@ -1,6 +1,7 @@
 var alphaC;
 var layer;
 var rad = 30;
+var paragraphIsMade = false;
 
 var rx;
 var ry;
@@ -62,6 +63,12 @@ function draw() {
 
 
 function mouseDragged() {
+
+  if(!paragraphIsMade);
+  createA('pg6.html','Next Line');
+  //if (not) paragraphIsMade
+paragraphIsMade = true;
+
   for (var x = mouseX - rad; x < mouseX + rad; x++) {
     for (var y = mouseY - rad; y < mouseY + rad; y++) {
       if (dist(x, y, mouseX, mouseY) < rad && x > 0 && x <= width) {
