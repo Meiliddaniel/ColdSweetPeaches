@@ -15,25 +15,25 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500, 400);
+  createCanvas(windowWidth/2,windowHeight/2);
   textAlign(CENTER);
 }
 
 function draw() {
   background(255, 222, 130);
   textFont(title);
-  textSize(45);
+  textSize(width * (45/500));
   fill(0, 0, 0, forgetOpacity);
   text("Forget", width / 3.5, height / 2.5);
   fill(0);
   textFont(body);
-  textSize(25);
+  textSize(width * (25/500));
   text("the", width / 2.5, height / 2);
   textFont(note);
   textSize(littleSize);
   text("little", width / 2.5, height / 1.7);
   textFont(body);
-  textSize(25);
+  textSize(width * (25/500));
   text("old", width / 2, height / 1.7);
   text("ELECTRIC FAN", width / 1.5, height / 1.5);
   

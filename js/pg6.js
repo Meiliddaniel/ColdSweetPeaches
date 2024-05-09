@@ -14,25 +14,25 @@ function loaded() {
 }
 
 function setup() {
-  createCanvas(500, 400);
+  createCanvas(windowWidth/2,windowHeight/2);
   textAlign(CENTER);
   imageMode(CENTER);
 }
 
 function draw() {
   background(220);
-  image(radio1,width/2,height/2,width,height);
+  image(radio1,width/2,height/2,width,height * (460/400));
   
   if(imageState == 1){
-    image(radio2,width/2,height/2,width,height);
+    image(radio2,width/2,height/2,width,height * (460/400));
   }
   
    textFont(title);
-  textSize(25);
+  textSize(width * (15/500));
   text("Cold sweet peaches from a can, \n best remedy for summer's heat.", width/4, height/20);
   textFont(note);
-  textSize(12);
-  text("(Press P)",width/2, height/4.2);
+  textSize(width * (10/500));
+  text("(Press P)",width/2, height/5);
 }
 
 

@@ -1,8 +1,9 @@
-let textMovement = 150;
+let textMovement = 250;
 let movementSpeed = -8;
 let movementStarted = false;
 
 var imageState = 0;
+
 
 function preload(){
   title=loadFont('font/GreatVibes.ttf');
@@ -13,9 +14,10 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(500, 400);
+  createCanvas(windowWidth/2,windowHeight/2);
   textAlign(CENTER);
   imageMode(CENTER);
+
 }
 
 function draw() {
@@ -26,7 +28,8 @@ function draw() {
    if(imageState ==1){
     image(fanOn,width * (400/500),height/2,width,height);
    }
-
+   
+textSize(width * (10/500))
 
   text("And a little old electric fan \n wishing we were still in May", textMovement ,height/2);
 
@@ -58,7 +61,7 @@ function startMovement() {
   let interval = setInterval(function() {
     textMovement += movementSpeed;
     if (textMovement < -100) { 
-      textMovement = 150;
+      textMovement = 250;
       clearInterval(interval);
   }
   }, 50);
