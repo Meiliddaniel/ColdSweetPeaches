@@ -9,7 +9,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(windowWidth/2,windowHeight/2);
+  createCanvas(windowWidth/1.5,windowHeight/1.5);
   imageMode(CENTER);
   background(320);
   image(table,width/2,height/2,width * (400/500),height);

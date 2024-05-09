@@ -21,9 +21,9 @@ function preload(){
 }
 
 function setup() {
-  var w = 500,
-  h = 400;
-  createCanvas(w, h);
+  var w = windowWidth/2,
+  h = windowHeight/1.5;
+  createCanvas(w,h);
   textAlign(CENTER);
   imageMode(CENTER);
   background(200);

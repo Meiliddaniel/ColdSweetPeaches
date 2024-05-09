@@ -1,6 +1,7 @@
 let textMovement = 250;
 let movementSpeed = -8;
 let movementStarted = false;
+var fanNoise;
 
 var imageState = 0;
 
@@ -11,10 +12,15 @@ function preload(){
   note=loadFont('font/Zeyada.ttf');
   fanOff=loadImage('img/FanOff.png');
   fanOn=loadImage('img/FanOn.gif');
+  fanNoise=loadSound('img/fan.mp3', loaded);
+}
+
+function loaded() {
+  console.log("loaded");
 }
 
 function setup() {
-  createCanvas(windowWidth/2,windowHeight/2);
+  createCanvas(windowWidth/1.5,windowHeight/1.5);
   textAlign(CENTER);
   imageMode(CENTER);
 
@@ -47,12 +53,18 @@ function mousePressed(){
       imageState = 1;
           moveStarted = true;
     startMovement();
-      
     } else {
       imageState = 0;
     }
+
+  if (imageState == 1) {
+    fanNoise.play();
+    fanNoise.setVolume(0.3);
+  } else {
+    fanNoise.stop();
   
   }
+}
 }
 
 
